@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Developer Portfolio</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="portfolio">
+        <section class="page cover">
+            <div class="cover-content">
+                <div class="cover-copy">
+                    <div class="cover-title-row">
+                        <h1 class="cover-name">유기준</h1>
+                        <p class="cover-role">BACKEND DEVELOPER</p>
+                    </div>
+                    <div class="cover-accent-line" aria-hidden="true"></div>
+
+                    <p class="cover-introduction">
+                        <span>컴퓨터공학을 전공했으며 백엔드 개발자를 목표로 하고 있습니다.</span>
+                        <span>사용자 요구를 데이터 모델과 기능으로 만드는 과정을 좋아하고,</span>
+                        <span>Django와 Spring으로 웹 서비스 개발을 하고 있습니다.</span>
+                        <span>인증, 외부 API, 실시간 통신과 비동기 작업을 만들며</span>
+                        <span>오류를 재현하고 처리 흐름을 따라가는 디버깅을 좋아합니다.</span>
+                        <span>동작 원리를 이해하고 꾸준히 발전하는 개발자가 되겠습니다.</span>
+                    </p>
+                </div>
+
+                <figure class="portrait">
+                    <div class="photo-placeholder">
+                        <img src="assets/profile.jpg" alt="profile_image">
+                    </div>
+                </figure>
+            </div>
+
+            <footer class="page-footer cover-footer">
+                <span>01</span>
+            </footer>
+        </section>
+
+        <section class="page">
+            <header class="page-header">
+                <div>
+                    <p class="eyebrow">Profile</p>
+                    <h2>기술과 약력</h2>
+                </div>
+            </header>
+
+            <div class="two-columns profile-layout">
+                <div>
+                    <h3>Skills</h3>
+                    <dl class="info-list skills-list">
+                        <div>
+                            <dt>Backend</dt>
+                            <dd>Java, Spring Boot, Python, Django</dd>
+                        </div>
+                        <div>
+                            <dt>Data</dt>
+                            <dd>SQL, Spring Data JPA, Django ORM, H2, SQLite, Redis</dd>
+                        </div>
+                        <div>
+                            <dt>Integration</dt>
+                            <dd>REST API, WebSocket, Celery</dd>
+                        </div>
+                        <div>
+                            <dt>Tools</dt>
+                            <dd>Git, GitHub, Gradle</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="background-section">
+                    <h3>Specs</h3>
+                    <dl class="info-list background-list">
+                        <div>
+                            <dt>Education</dt>
+                            <dd>
+                                <ul class="credential-list">
+                                    <li><span>경성대 컴퓨터공학과 졸업예정</span><small>21.03 ~ 27.03</small></li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt>Certificate</dt>
+                            <dd>
+                                <ul class="credential-list">
+                                    <li><span>정보처리기사</span><small>2026.06</small></li>
+                                    <li><span>정보기기운용기능사</span><small>2023.06</small></li>
+                                    <li><span>1종 보통 운전면허</span><small>2021.08</small></li>
+                                    <li><span>지게차운전기능사</span><small>2023.11</small></li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt>Language</dt>
+                            <dd>
+                                <ul class="credential-list">
+                                    <li><span>TOEIC 815점</span><small>2024.11</small></li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt>Award</dt>
+                            <dd>
+                                <ul class="credential-list">
+                                    <li><span>부산경제진흥원 해커톤 2등 총장상</span><small>2026.07</small></li>
+                                </ul>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+            <footer class="page-footer">
+                <span></span>
+                <span>02</span>
+            </footer>
+        </section>
+
+        <section class="page">
+            <header class="page-header">
+                <div>
+                    <p class="eyebrow">Project 01</p>
+                    <h2>Bookshelf</h2>
+                    <p class="project-summary">Django 기반 콘텐츠·도서 커뮤니티 웹 서비스</p>
+                </div>
+                <div class="project-meta">
+                    <span>개인 프로젝트</span>
+                    <span>2026.03 - 2026.05</span>
+                </div>
+            </header>
+
+            <div class="two-columns project-layout">
+                <div>
+                    <h3>Overview</h3>
+                    <p>
+                        도서 검색과 콘텐츠 작성을 중심으로 사용자 간 정보를 공유하고,
+                        실시간 채팅과 음원 변환 기능을 이용할 수 있도록 구현했습니다.
+                    </p>
+
+                    <h3>Tech Stack</h3>
+                    <p class="stack">
+                        Python · Django · SQLite · Django ORM · Channels · WebSocket ·
+                        Celery · Redis · CKEditor · 알라딘 Open API
+                    </p>
+
+                    <figure class="project-image-card">
+                        <img src="assets/bookshelf.png" alt="Bookshelf 프로젝트 화면">
+                    </figure>
+                </div>
+
+                <div>
+                    <h3>Key Implementation</h3>
+                    <ul class="feature-list">
+                        <li>커스텀 사용자 모델과 로그인 권한 제어를 적용하고 게시글·댓글 CRUD 구현</li>
+                        <li>태그와 게시글을 1:N 관계로 설계하고 태그별 게시글 조회 기능 구현</li>
+                        <li>알라딘 Open API 응답을 서비스 계층에서 정규화하고 <br />ISBN 및 제목·저자 기준 중복 처리</li>
+                        <li>Channels와 WebSocket으로 채팅방 단위 메시지 브로드캐스트 및 <br />메시지 DB 저장</li>
+                        <li>Celery·Redis 작업 큐로 음원 변환을 웹 요청에서 분리하고 <br />작업 상태 실시간 조회 기능 구현</li>
+                    </ul>
+
+                    <h3 class="learned-offset">What I Learned</h3>
+                    <p>
+                        외부 API 데이터를 내부 모델로 변환하는 과정과 실시간 연결,
+                        오래 걸리는 작업을 서버 내부에서 분할해 병렬제어하는 것이 효율적임을 알았습니다.
+                    </p>
+                </div>
+            </div>
+
+            <footer class="page-footer">
+                <span></span>
+                <span>03</span>
+            </footer>
+        </section>
+
+        <section class="page">
+            <header class="page-header">
+                <div>
+                    <p class="eyebrow">Project 02</p>
+                    <h2>RSS 뉴스 아카이브</h2>
+                    <p class="project-summary">Spring Boot 기반 RSS 뉴스 수집·검색 서비스</p>
+                </div>
+                <div class="project-meta">
+                    <span>개인 프로젝트</span>
+                    <span>2026.06 - 2026.07</span>
+                </div>
+            </header>
+
+            <div class="two-columns project-layout">
+                <div class="project-text-compact project-overview-offset">
+                    <h3>Overview</h3>
+                    <p>
+                        Google News와 GeekNews의 RSS 피드를 주기적으로 수집하고,
+                        검색엔진을 추가하여 키워드 검색이 가능하고, 개인 북마크 기능을 제공하는 서비스입니다.
+                    </p>
+
+                    <figure class="project-image-card project-image-card-inline">
+                        <img src="assets/rssArchive.png" alt="RSS 뉴스 아카이브 프로젝트 화면">
+                    </figure>
+                </div>
+
+                <div class="project-text-compact project-detail-offset">
+                    <h3>Key Implementation</h3>
+                    <ul class="feature-list">
+                        <li>Spring Scheduler와 수동 요청이 동일한 RSS 수집 로직을 <br />사용하도록 구성</li>
+                        <li>Spring Security를 적용해 회원가입·로그인 및 사용자별 북마크 설정</li>
+                        <li>한글 부분 검색을 위한 2-gram 토큰화와 문서별 단어 빈도를 <br />저장하는 역색인 추가</li>
+                        <li>단어 희귀도와 문서 길이를 반영하는 BM25 점수로 검색 결과를 정렬</li>
+                        <li>애플리케이션 시작 시 기존 뉴스를 재색인하고 새 뉴스 저장 직후 색인을 갱신</li>
+                    </ul>
+
+                    <h3 class="search-flow-offset">Search Flow</h3>
+                    <p class="inline-flow">
+                        검색어 정규화 → 2-gram 토큰화 → 역색인 조회 → BM25 점수 합산 <br />→
+                        관련도순 정렬
+                    </p>
+                </div>
+            </div>
+
+            <footer class="page-footer">
+                <span></span>
+                <span>04</span>
+            </footer>
+        </section>
+
+        <section class="page closing">
+            <header class="page-header">
+                <div>
+                    <p class="eyebrow">Closing</p>
+                    <h2>배운 점과 앞으로의 방향</h2>
+                </div>
+            </header>
+
+            <div class="two-columns closing-layout">
+                <div>
+                    <h3>How I Work</h3>
+                    <ul class="feature-list work-list">
+                        <li>구현 전에 요구사항과 화면 흐름을 먼저 정리하고, 필요한 기능을 작은 단위로 나누어 확인하겠습니다.</li>
+                        <li>막히는 부분은 혼자 오래 붙잡기보다 현재 상황과 시도한 내용을 정리해 <br />동료와 소통하겠습니다.</li>
+                        <li>팀원의 의견을 존중하며, 피드백을 바탕으로 더 나은 구현 방향을 함께 <br />찾아가며 진행하겠습니다.</li>
+                    </ul>
+
+                    <h3>Next Challenge</h3>
+                    <ul class="feature-list next-challenge-list">
+                        <li>Python을 활용한 반복 업무 자동화와 데이터 처리 스크립트 작성 경험을 늘리기</li>
+                        <li>Java 알고리즘 문제 풀이를 꾸준히 이어가며 자료구조와 문제 해결 능력을 단련하기</li>
+                        <li>코드 리뷰를 통해 의도를 이해하고, 더 좋은 코드 작성 습관을 기르기</li>
+                    </ul>
+                </div>
+
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <dl class="info-list contact-list">
+                        <div>
+                            <dt>Phone</dt>
+                            <dd>010 - 7552 - 4741</dd>
+                        </div>
+                        <div>
+                            <dt>Email</dt>
+                            <dd>jkk4741@naver.com</dd>
+                        </div>
+                        <div>
+                            <dt>GitHub</dt>
+                            <dd><a href="https://github.com/dbrlwns">https://github.com/dbrlwns</a></dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+            <footer class="page-footer">
+                <span></span>
+                <span>05</span>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
